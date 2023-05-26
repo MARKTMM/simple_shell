@@ -93,7 +93,7 @@ void handle_line(char **line, ssize_t read)
 }
 
 /**
- * get_new_len -Determine the updated length of a line divided 
+ * get_new_len -Determine the updated length of a line divi
  *              by ";", "||", "&&&", or "#".
  * @line: check line
  *
@@ -153,7 +153,7 @@ ssize_t get_new_len(char *line)
 }
 /**
  * logical_ops - line checker for logical operators
- * @line: Provide a pointer to the character that needs to be checked in the line
+ * @line: Provide a pointer to the character that needs to be checked in the l
  * @new_len: new_len Pointer
  */
 void logical_ops(char *line, ssize_t *new_len)

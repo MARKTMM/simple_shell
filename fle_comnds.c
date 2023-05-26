@@ -4,7 +4,7 @@ int cant_open(char *file_path);
 int proc_file_commands(char *file_path, int *exe_ret);
 
 /**
- * cant_open - when file lacks proper permissions or doesn't exist, print error messg
+ * cant_open - when file lacks proper permissions or doesn't exist, print erro
  * @file_path: supposed file Path .
  *
  * Return: 127.

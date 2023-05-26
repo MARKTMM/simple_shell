@@ -59,9 +59,7 @@ int _strspn(char *s, char *accept)
  * @s1: first string be compared
  * @s2: second string be compared
  *
- * Return: Obtain a positive byte difference if s1 is greater than s2. 
- Return 0 if s1 is equal to s2. Otherwise, 
- provide a negative byte difference if s1 is less than s2.
+ * Return: Obtain a positive byte difference if s1 is greater than
  */
 int _strcmp(char *s1, char *s2)
 {

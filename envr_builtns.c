@@ -35,7 +35,7 @@ int shellby_env(char **args, char __attribute__((__unused__)) **front)
  * shellby_setenv - environmental variable are added to the PATH.
  * @args: arguments arrays passed the shell.
  * @front: A double pointer to beginning of args.
- * 
+ *
  * Return: when an error occurs = -1.
  *         o/w = 0.
  */
@@ -87,7 +87,6 @@ int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
  * shellby_unsetenv - environmental variable are deleted from the PATH.
  * @args: arguments arrays passed to shell.
  * @front: double pointer to beginning of args.
- * 
  * Return: error occurs = -1.
  *         O/w - 0.
  */

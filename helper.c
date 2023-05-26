@@ -57,7 +57,7 @@ char *get_pid(void)
  * @beginning: Specify the environmental variable to be queried.
  * @len: Indicate the length of the environmental variable to be searched.
  *
- * Return: return an empty string. Otherwise, return value environmental variable.
+ * Return: return an empty string. Otherwise, return value environmental varia
  *
  * Description: format VARIABLE=VALUE.
  */
@@ -89,7 +89,7 @@ char *get_env_value(char *beginning, int len)
 }
 
 /**
- * variable_replacement - replacementHandles variable 
+ * variable_replacement - replacementHandles variable
  * @line: command double pointer and arguments.
  * @exe_ret: A pointer to the return value of the last executed command.
  *

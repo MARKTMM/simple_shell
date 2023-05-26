@@ -179,7 +179,8 @@ int handle_args(int *exe_ret)
 }
 
 /**
- * check_args - Verify if there are any leading instances of ';', ';;', '&&', or '||'.
+ * check_args - Verify if there are any leading instances of
+ * ';', ';;', '&&', or '||'.
  * @args: tokenized 2D pointer command arguments.
  *
  * Return: return 2.

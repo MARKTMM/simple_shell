@@ -5,7 +5,7 @@ int count_tokens(char *str, char *delim);
 char **_strtok(char *line, char *delim);
 
 /**
- * token_len - Locates the delimiter index 
+ * token_len - Locates the delimiter index
  * @str: searched string.
  * @delim:character delimiter .
  *
