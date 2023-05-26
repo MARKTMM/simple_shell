@@ -9,7 +9,7 @@ int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
  * @args: arguments arrays passed to the shell.
  * @front: double pointer to beginning of args.
  *
- * Return: If an error occurs = -1.
+ * Return: an error occurs = -1.
  *	   O/w= 0.
  *
  */
