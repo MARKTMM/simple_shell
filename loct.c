@@ -4,11 +4,11 @@ char *fill_path_dir(char *path);
 list_t *get_path_dir(char *path);
 
 /**
- * get_location - Locates a command in the PATH.
- * @command: The command to locate.
+ * get_location - command locater PATH
+ * @command: command locate
  *
- * Return: If an error occurs or the command cannot be located - NULL.
- *         Otherwise - the full pathname of the command.
+ * Return: error occurs command cannot be located - NULL.
+ *         Otherwise - full pathname of command.
  */
 char *get_location(char *command)
 {
@@ -49,12 +49,10 @@ char *get_location(char *command)
 }
 
 /**
- * fill_path_dir - Copies path but also replaces leading/sandwiched/trailing
- *		   colons (:) with current working directory.
- * @path: The colon-separated list of directories.
+ * fill_path_dir - Copies path
+ * @path: list of directories
  *
- * Return: A copy of path with any leading/sandwiched/trailing colons replaced
- *	   with the current working directory.
+ * Return: A copy of path with the current working directory.
  */
 char *fill_path_dir(char *path)
 {
@@ -104,11 +102,10 @@ char *fill_path_dir(char *path)
 }
 
 /**
- * get_path_dir - Tokenizes a colon-separated list of
- *                directories into a list_s linked list.
- * @path: The colon-separated list of directories.
+ * get_path_dir - colon-separated Tokenizes
+ * @path: colon-separated list directories
  *
- * Return: A pointer to the initialized linked list.
+ * Return: pointer to initialized list.
  */
 list_t *get_path_dir(char *path)
 {
