@@ -5,7 +5,7 @@ void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 
 /**
- * _realloc - memory Reallocates 
+ * _realloc - memory Reallocates
  * @ptr: memory pointer allocated previously
  * @old_size: byte
  * @new_size: byte size

@@ -16,11 +16,10 @@
 
 /* environemnt Global */
 extern char **environ;
-/* program Global name */
+/* Global name */
 char *name;
-/* history Global counter */
+/* Global counter*/
 int hist;
-
 /**
  * struct list_s - new struct type defining linked list
  * @dir: directory
