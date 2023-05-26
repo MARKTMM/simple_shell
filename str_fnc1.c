@@ -6,12 +6,12 @@ int _strcmp(char *s1, char *s2);
 int _strncmp(const char *s1, const char *s2, size_t n);
 
 /**
- * _strchr - Locates a character in a string.
- * @s: The string to be searched.
- * @c: The character to be located.
+ * _strchr - Locates character in string
+ * @s: string be searched
+ * @c: character to be located
  *
- * Return: If c is found - a pointer to the first occurence.
- *         If c is not found - NULL.
+ * Return: If c is found - pointer to first occurence.
+ *         If c not found - NULL.
  */
 char *_strchr(char *s, char c)
 {
@@ -27,12 +27,12 @@ char *_strchr(char *s, char c)
 }
 
 /**
- * _strspn - Gets the length of a prefix substring.
- * @s: The string to be searched.
- * @accept: The prefix to be measured.
+ * _strspn - Gets length of prefix substring
+ * @s: string be searched.
+ * @accept: prefix to measured.
  *
- * Return: The number of bytes in s which
- *         consist only of bytes from accept.
+ * Return: number bytes in s which
+ *         consist only bytes from accept
  */
 int _strspn(char *s, char *accept)
 {
@@ -55,13 +55,13 @@ int _strspn(char *s, char *accept)
 }
 
 /**
- * _strcmp - Compares two strings.
- * @s1: The first string to be compared.
- * @s2: The second string to be compared.
+ * _strcmp - Compares strings
+ * @s1: first string be compared
+ * @s2: second string be compared
  *
- * Return: Positive byte difference if s1 > s2
- *         0 if s1 = s2
- *         Negative byte difference if s1 < s2
+ * Return: Obtain a positive byte difference if s1 is greater than s2. 
+ Return 0 if s1 is equal to s2. Otherwise, 
+ provide a negative byte difference if s1 is less than s2.
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -78,14 +78,12 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * _strncmp - Compare two strings.
- * @s1: Pointer to a string.
- * @s2: Pointer to a string.
- * @n: The first n bytes of the strings to compare.
+ * _strncmp - Compare strings
+ * @s1: Pointer to string
+ * @s2: Pointer to strin
+ * @n: first n bytes of strings compare
  *
- * Return: Less than 0 if s1 is shorter than s2.
- *         0 if s1 and s2 match.
- *         Greater than 0 if s1 is longer than s2.
+ * Return: return 0
  */
 int _strncmp(const char *s1, const char *s2, size_t n)
 {
