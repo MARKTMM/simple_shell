@@ -7,12 +7,11 @@ int handle_args(int *exe_ret);
 int check_args(char **args);
 
 /**
- * get_args - Gets a command from standard input.
- * @line: A buffer to store the command.
- * @exe_ret: The return value of the last executed command.
+ * get_args - command getter standard input
+ * @line: store buffer command
+ * @exe_ret: return value last command
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the stored command.
+ * Return: error occurs - NULL. Otherwise - pointer to the stored command.
  */
 char *get_args(char *line, int *exe_ret)
 {
@@ -42,12 +41,12 @@ char *get_args(char *line, int *exe_ret)
 }
 
 /**
- * call_args - Partitions operators from commands and calls them.
- * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
- * @exe_ret: The return value of the parent process' last executed command.
+ * call_args - operators Partitions
+ * @args: arguments
+ * @front: pointer double beginning of args
+ * @exe_ret: parent return value last command.
  *
- * Return: The return value of the last executed command.
+ * Return: last command.
  */
 int call_args(char **args, char **front, int *exe_ret)
 {
@@ -100,12 +99,12 @@ int call_args(char **args, char **front, int *exe_ret)
 }
 
 /**
- * run_args - Calls the execution of a command.
- * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
- * @exe_ret: The return value of the parent process' last executed command.
+ * run_args - execution command.
+ * @args: arguments array
+ * @front: beginning double pointer
+ * @exe_ret: last command
  *
- * Return: The return value of the last executed command.
+ * Return: last command.
  */
 int run_args(char **args, char **front, int *exe_ret)
 {
@@ -135,12 +134,10 @@ int run_args(char **args, char **front, int *exe_ret)
 }
 
 /**
- * handle_args - Gets, calls, and runs the execution of a command.
- * @exe_ret: The return value of the parent process' last executed command.
+ * handle_args -  execution of command.
+ * @exe_ret: value of the parent process last command
  *
  * Return: If an end-of-file is read - END_OF_FILE (-2).
- *         If the input cannot be tokenized - -1.
- *         O/w - The exit value of the last executed command.
  */
 int handle_args(int *exe_ret)
 {
@@ -182,10 +179,10 @@ int handle_args(int *exe_ret)
 }
 
 /**
- * check_args - Checks if there are any leading ';', ';;', '&&', or '||'.
- * @args: 2D pointer to tokenized commands and arguments.
+ * check_args - Verify if there are any leading instances of ';', ';;', '&&', or '||'.
+ * @args: tokenized 2D pointer command arguments.
  *
- * Return: If a ';', '&&', or '||' is placed at an invalid position - 2.
+ * Return: return 2.
  *	   Otherwise - 0.
  */
 int check_args(char **args)
